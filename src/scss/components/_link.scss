@@ -1,0 +1,60 @@
+.link{
+    position: relative;
+    @include link;
+
+}
+
+.history__link{
+    color: $light-color !important;
+}
+
+.history__link::after{
+    background-color: $light-color !important;
+}
+
+.history__link::before{
+    background-color: $light-color !important;
+}
+
+.nav__link{
+    @include text;
+    min-width: 80px;
+    margin: 0% 5%;
+    color: $dark-color;
+    text-decoration: none;
+    border-bottom: $light-color solid;
+}
+
+.nav__link:hover{
+    color: $orange;
+    border:  none;
+    border-bottom: $orange solid;
+}
+
+.link:after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    height: 1.5px;
+    width: 10px;
+    right: 0;
+    border-radius: 2px;
+    background-color: $orange;
+    transform: rotate(45deg);
+}
+
+.link:before{
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    height: 1.5px;
+    width: 10px;
+    right: 0;
+    background-color: $orange;
+    transform: rotate(-45deg);
+}
+
+.link:hover{
+    color: $dark-color;
+}
+

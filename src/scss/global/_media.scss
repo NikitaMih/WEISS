@@ -1,0 +1,37 @@
+@media (min-width: 320px) and (max-width: 992px){
+    .logo{
+        padding: 2% 5% 0 0;
+    }
+    .nav{
+        justify-content: center !important;
+        
+        &__list{
+            justify-content: center !important;
+            flex-wrap: wrap !important;
+        }
+    }
+
+    .hero{
+        &__img{
+            position: relative !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .history{
+
+        &__about-blok{
+            box-shadow: none !important;
+        } 
+
+        &__img{
+            display: none !important;
+        }
+    }
+
+    .contact{
+        &__img{
+            display: none !important;
+        }
+    }
+}

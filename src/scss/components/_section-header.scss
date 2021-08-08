@@ -1,0 +1,12 @@
+.section-header{
+    width: 40%;
+    min-width: $min-w;
+    &__title{
+        @include title;
+    }
+
+    &__description{
+        @include text;
+    }
+
+}

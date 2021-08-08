@@ -1,0 +1,55 @@
+.logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1% 2% 0 0;
+    color: $dark-color;
+    font-weight: bolder;
+    font-size: 37px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 25px;
+    height: 5px;
+    background-color: $orange;
+    border-radius: 2px;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 25px;
+    height: 5px;
+    background-color: $orange;
+    border-radius: 2px;
+    transform: rotate(90deg);
+}
+
+.logo:hover{
+    color: black;
+}
+
+.logo-white{
+    padding: 2% 6% 0 0;
+    color: $light-color;
+}
+
+.logo-white::before{
+    background-color: $light-color;
+}
+
+.logo-white::after{
+    background-color: $light-color;
+}
+
+.logo-white:hover{
+    color: aqua;
+}
