@@ -1,0 +1,42 @@
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $light-grey-backgroung;
+
+    &__position{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3% 0 3% 0;
+    }
+    
+    &__career{
+        width: 45%;
+    }
+
+    &__subtitle{
+        @include subtitle;
+
+    }
+
+    &__title{
+        @include title;
+
+    }
+
+    &__description{
+        @include text;
+
+    }
+
+    &__img{
+        position: absolute;
+        z-index: 10;
+        bottom: 15%;
+        right: 15%;
+        width: 480px;
+        height: 314px;
+    }
+}

@@ -1,0 +1,38 @@
+.articles{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 0;
+
+    &__about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__list{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__subtitle{
+        @include subtitle;
+    }
+}
+
+.article{
+    width: 30%;
+    min-width: 320px;
+    &__title{
+        @include card-title;
+    }
+
+    &__description{
+        @include text;
+    }
+}

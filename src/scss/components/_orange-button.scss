@@ -1,0 +1,37 @@
+.orange-button{
+    position: relative;
+    padding: 0.5em 2.5em 0.5em 1em;
+    min-width: 150px;
+    color: $light-color;
+    font-size: $text-size;
+    background-color: $orange;
+    border: 0;
+    cursor: pointer;
+}
+
+.orange-button::after{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 4.5px);
+    height: 2px;
+    width: 14px;
+    border-radius: 2px;
+    background-color: $light-color;
+    transform: rotate(45deg);
+}
+
+.orange-button::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: calc(50% + 4.5px);
+    height: 2px;
+    width: 14px;
+    background-color: $light-color;
+    transform: rotate(-45deg);
+}
+
+.orange-button:hover{
+    background-color: $dark-color;
+}
