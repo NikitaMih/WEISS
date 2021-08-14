@@ -1,0 +1,40 @@
+//text
+@mixin title {
+    color: $dark-color;
+    font-size: $title;
+    font-weight: bold;
+    line-height: 110%;
+    padding: 5% 0 0 0;
+}
+
+@mixin card-title {
+    color: $dark-color;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 110%;
+    padding: 5% 0 0 0;
+}
+
+@mixin subtitle {
+    color: $light-blue-color;
+    font-size: $subtitle;
+    line-height: 110%;
+    padding: 5% 0 0 0;
+}
+
+@mixin text {
+    color: $light-blue-color;
+    font-size: $text-size;
+    line-height: 110%;
+    padding: 5% 0 5% 0;
+}
+
+//components
+
+@mixin link {
+    @include text;
+    color: $orange;
+    text-decoration: none;
+    padding: 5% 5% 0 0;
+    min-width: 80px;
+}

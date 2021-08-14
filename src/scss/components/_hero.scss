@@ -1,0 +1,31 @@
+.hero{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 0 0 0;
+
+
+    &__part{
+        width: 40%;
+    }
+
+    &__subtitle{
+        @include subtitle;
+    }
+
+    &__title{
+        @include title; 
+    }
+
+    &__text{
+        @include text; 
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+        box-shadow: -30px 50px 5px $light-grey-backgroung;
+    }
+    
+}
